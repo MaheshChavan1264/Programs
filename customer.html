@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Add / Remove Table Rows</title>
+    <style>
+        table{
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 1px solid #cdcdcd;
+        }
+        table th, table td{
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="customer.js"></script>
+</head>
+<body>
+<form>
+    <input type="text" id="name" placeholder="Name">
+    <input type="button" class="add-row" value="Add Row">
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>Select</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox" name="record"></td>
+        <td>Peter Parker</td>
+    </tr>
+    </tbody>
+</table>
+<button type="button" class="delete-row">Delete Row</button>
+</body>
+</html>
